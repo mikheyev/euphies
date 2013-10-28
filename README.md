@@ -13,6 +13,11 @@ There are two folders *aurinia* and *editha* that correspond to species-specific
 This is a workflow is common to both species, copying raw data from SQC, trimming them, and then making an ABYSS assembly. 
 We sequenced the same libary on two lanes (one run on the HiSeq2000 and one on the 2500).
 
-* trim.sh
+* trim_hiseq2500.sh and trim_hiseq2000.sh
   - cut low quality sequence and move files to their respective folders from the OIST sequencing center folder.
+  - the two different files correspond to the two runs
 * concatenate.sh
+  - collect all the trimmed files into one set of input files
+* abyss.sh
+  - runs a range of k-mers for assembly
+  - these should be invoked with **qsub -v NAME=*species***, 
