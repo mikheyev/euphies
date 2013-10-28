@@ -21,4 +21,4 @@ We sequenced the same libary on two lanes (one run on the HiSeq2000 and one on t
   - collect all the trimmed files into one set of input files
 * abyss.sh
   - runs a range of k-mers for assembly
-  - these should be invoked with **qsub -v NAME=*species*** 
+  - these should be invoked with **qsub -v NAME=_species_** 
